@@ -1,0 +1,10 @@
+---
+
+- hosts: boom-magento-serversetup
+  sudo: yes
+  roles:
+    - boom-base
+    - boom-tuning
+    - boom-postfix
+    - ansible-role-mysql
+    - boom-magento
