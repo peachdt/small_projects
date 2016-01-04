@@ -1,0 +1,2 @@
+[boom-magento-localsetup]
+replaceme ansible_ssh_host=replaceme.boompayments.com ansible_ssh_user=root

@@ -3,7 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
-	"BoomPayments/labs/zhen_projects/utility_tool/ansible"
+	"small_projects/utility_tool/setup/ansible"
+	"small_projects/utility_tool/setup/local"
+	"small_projects/utility_tool/setup/server"
 
 )
 
@@ -18,13 +20,25 @@ func main() {
 
 	case "rebuild":
 //		create ansible files
-		ansible.CreateAnsibleFiles(*target_box, *env)
+		yml_file := ansible.CreateAnsibleFiles(*target_box, *env)
+		if yml_file != nil {
+			ansible.RunAnsible(*yml_file)
+		}
 //		write to files
 //		gives out warning, press y or resume
 //		delete files
-		fmt.Println(fmt.Sprintf("rebuilding box %s in %s", *target_box, *env))
+		fmt.Println(fmt.Sprintf("Ansible rebuild done, please run `go run main.go -action=clear -env=%s` to delete created files.", *env))
+	case "clear":
+		if *env == "local" {
+			local.DeleteLocalFiles()
+		} else if *env == "server" {
+			server.DeleteServerFiles()
+		} else {
+			fmt.Println("env missing! Please specify env argument (local/server)")
+		}
 	default:
 		fmt.Println("Arguments missing!")
 		fmt.Println("go run main.go -action=rebuild -target_box=test -env=local/server")
+		fmt.Println("go run main.go -action=clear -env=local/server")
 	}
 }
