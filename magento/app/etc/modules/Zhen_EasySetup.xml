@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Zhen_EasySetup>
+      <active>true</active>
+      <codePool>community</codePool>
+      <version>0.1.0</version>
+    </Zhen_EasySetup>
+  </modules>
+</config>

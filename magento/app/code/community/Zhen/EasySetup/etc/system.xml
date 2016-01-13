@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <zhen translate="label">
+            <label>Easy Setup</label>
+            <sort_order>999</sort_order>
+        </zhen>
+    </tabs>
+    <sections>
+        <zhen_setup translate="label">
+            <label>Setup</label>
+            <tab>zhen</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>150</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+        </zhen_setup>
+    </sections>
+</config>

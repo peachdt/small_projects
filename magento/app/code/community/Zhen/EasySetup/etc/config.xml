@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Zhen_EasySetup>
+      <version>0.1.0</version>
+    </Zhen_EasySetup>
+  </modules>
+  <global>
+    <helpers>
+      <easysetup>
+        <class>Zhen_EasySetup_Helper</class>
+      </easysetup>
+    </helpers>
+  </global>
+</config> 
