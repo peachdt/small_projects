@@ -9,10 +9,10 @@ import (
 var _db *sqlx.DB
 // DB error codes (need to formalize this)
 
-const PGDBName = "gwmigration"
-const PGDBUserName = "gwdbadmin"
-const PGDBPassword = "LigCigUt34"
-const PGDBHost = "pdb02-rds.boomlabs.co"
+const PGDBName = ""
+const PGDBUserName = ""
+const PGDBPassword = ""
+const PGDBHost = ""
 const PGSSLMode = "disable"
 const DBMaxConnections = 50
 const DBMaxIdleConnections = 5

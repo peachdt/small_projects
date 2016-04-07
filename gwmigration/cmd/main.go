@@ -10,10 +10,10 @@ import (
 
 )
 
-const bc_store = "BiteOfHome"
-const bc_client = "23609"
-const bc_secret = "tjxchbdr8f97yuk6dta1u3l4ngjn89x"
-const bc_store_hash = "bhd27h"
+const bc_store = ""
+const bc_client = ""
+const bc_secret = ""
+const bc_store_hash = ""
 const bc_csv_path = "../csv/BC/"
 
 func main() {
